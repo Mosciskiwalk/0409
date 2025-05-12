@@ -41,6 +41,9 @@ done
 
 echo -e "${YELLOW}[2/4] 正在设置 Docker 和 Firefox 容器...${RESET}"
 
+sudo apt update
+sudo apt install docker.io -y
+
 # 确保 Docker 服务正在运行
 systemctl unmask docker docker.socket containerd 2>/dev/null || true
 systemctl start docker 2>/dev/null || true
