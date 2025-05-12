@@ -59,7 +59,7 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   -e LOCAL_NET=https://cloudstudio.net  \
-  -p 3000:5800 \
+  -p 5800:3000 \
   -p 3001:3001 \
   -v /path/to/mullvad-browser/config:/config \
   --shm-size="1gb" \
